@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thukivakam Chaturya - HR & Business Operations, People & Talent Coordination, and Tech Operations.">
+    <meta name="keywords" content="Thukivakam Chaturya, Chaturya, Portfolio, HR Operations, Business Operations, People Operations, Tech Operations, Alliance University">
+    <meta name="author" content="Thukivakam Chaturya">
+
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:title" content="Thukivakam Chaturya | Portfolio">
+    <meta property="og:description" content="HR & Business Operations | People & Talent Coordination">
+    <meta property="og:type" content="website">
+
+    <title>Thukivakam Chaturya | HR & Business Operations Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon (SVG Holographic Monogram) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230f172a' stroke='%236366f1' stroke-width='6'/><text x='50%' y='58%' font-size='46' font-family='sans-serif' font-weight='bold' fill='%2338bdf8' text-anchor='middle' dominant-baseline='middle'>C</text></svg>">
+</head>
+<body>
+
+    <!-- Ambient Particles Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                Chaturya<span class="logo-dot"></span>
+            </a>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button class="nav-cta-btn" onclick="openResumeModal()">
+                    <i class="fas fa-file-alt"></i> Resume
+                </button>
+                <button class="hamburger-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#hero" class="mobile-nav-link">Home</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#experience" class="mobile-nav-link">Experience</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#education" class="mobile-nav-link">Education</a>
+        <a href="#certifications" class="mobile-nav-link">Certifications</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <button class="btn-primary" onclick="openResumeModal(); toggleMobileNav(false);" style="margin-top: 1rem; width: 100%; justify-content: center;">
+            <i class="fas fa-file-pdf"></i> View Resume
+        </button>
+    </div>
+
+    <!-- Main Content Container -->
+    <main>
+
+        <!-- ==========================================================================
+             1. HERO SECTION (Full-Screen Cinematic 3D)
+             ========================================================================== -->
+        <section id="hero">
+            <div class="container hero-grid">
+                <!-- Left Column: Branding & Intro -->
+                <div class="hero-text-col reveal-on-scroll">
+                    <div class="hero-status-pill">
+                        <i class="fas fa-university text-accent" style="font-size: 0.95rem;"></i>
+                        <span style="font-weight: 700; letter-spacing: 0.5px;">ALLIANCE UNIVERSITY</span>
+                    </div>
+
+                    <h1 class="hero-name">
+                        THUKIVAKAM <span class="text-gradient">CHATURYA</span>
+                    </h1>
+
+                    <h2 class="hero-subhead">
+                        BCA AI & ML Student
+                    </h2>
+
+                    <div class="hero-tagline">
+                        <i class="fas fa-cube text-accent"></i>
+                        <span>Data Analytics • AI • Generative AI</span>
+                    </div>
+
+                    <div class="hero-typewriter-wrapper">
+                        <p class="hero-typewriter" id="heroTypewriter">
+                            Final-year BCA student at Alliance University specializing in Artificial Intelligence, Machine Learning, and Data Analytics.
+                        </p>
+                    </div>
+
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1rem; line-height: 1.65; max-width: 580px;">
+                        Final-year BCA (AI & ML) student at Alliance University with a strong academic project portfolio spanning deep learning, data analytics, and business intelligence. Comfortable working with Python, SQL, and Power BI, backed by real-world tech operations and HR internship experience. Also passionate and keenly interested in non-technical roles including HR Operations, People Management, and Business Operations.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn-primary">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <button class="btn-secondary" onclick="openResumeModal()">
+                            <i class="fas fa-file-download"></i>
+                            <span>View & Download Resume</span>
+                        </button>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="hero-social-row">
+                        <a href="https://linkedin.com/in/chaturyareddy-thukivakam-206023326/" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Chaturyathukivakam" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://hackerrank.com/profile/thukivakamc" target="_blank" rel="noopener noreferrer" class="social-pill" title="HackerRank">
+                            <i class="fab fa-hackerrank"></i>
+                        </a>
+                        <a href="https://leetcode.com/u/Thukivakam%20Chaturya/" target="_blank" rel="noopener noreferrer" class="social-pill" title="LeetCode">
+                            <i class="fas fa-code"></i>
+                        </a>
+                        <a href="mailto:thukivakamchaturyareddyy@gmail.com" class="social-pill" title="Email Direct">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <!-- Quick Metric Stats Bar -->
+                    <div class="hero-stats-row">
+                        <div class="stat-item">
+                            <h4>Alliance</h4>
+                            <p>University</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>3rd Year</h4>
+                            <p>AI & ML Major</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>7.0</h4>
+                            <p>Current CGPA</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>6+</h4>
+                            <p>Certifications</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive 3D Neural Globe with Futuristic Cyber Portrait -->
+                <div class="hero-visual-col reveal-on-scroll">
+                    <div id="three-hero-container"></div>
+
+                    <!-- 3D Cyber Portrait Card (Clean, Uncluttered) -->
+                    <div class="hero-photo-wrapper">
+                        <div class="hero-photo-card" data-tilt data-tilt-max="10">
+                            <div class="hero-photo-inner">
+                                <img src="assets/profile.jpg" alt="Thukivakam Chaturya" class="hero-photo-img">
+                                <div class="hero-photo-overlay"></div>
+                                <div class="hero-photo-caption">
+                                    <h4>Thukivakam Chaturya</h4>
+                                    <p><i class="fas fa-circle" style="font-size: 0.55rem; color: #10b981;"></i> BCA AI & ML • Non-Tech & HR Interests</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             2. ABOUT SECTION
+             ========================================================================== -->
+        <section id="about">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag"><i class="fas fa-user-astronaut"></i> Background</span>
+                    <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+                    <p class="section-subtitle">Passionate about Human Resources, People Operations, and Business Coordination with a strong data-driven foundation.</p>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Left: Narrative -->
+                    <div class="about-text reveal-on-scroll">
+                        <p>
+                            I am a final-year student at <strong>Alliance University</strong>, Bangalore, with a distinct passion for <strong>Human Resources (HR), People Operations, and Business Management</strong>.
+                        </p>
+                        <p>
+                            Through my role as an <strong>HR & Business Lead Operations Intern</strong> at Vayuvflux, I actively handle employee and client coordination, candidate profile screening, interview scheduling, proactive follow-ups, and operational dashboard management. In addition, my prior experience as a <strong>Tech Operations Intern</strong> at Virgio strengthened my expertise in inventory management, master data sheets, and internal operational workflows.
+                        </p>
+                        <p>
+                            What sets me apart is my ability to blend <strong>interpersonal empathy, active listening, and client communication</strong> with an analytical mindset. I leverage tools like Microsoft Excel, Google Sheets, and reporting dashboards to optimize operational workflows, support recruitment pipelines, and contribute to collaborative, growth-oriented teams.
+                        </p>
+
+                        <!-- Core Strengths Grid (HR & Operations Focused) -->
+                        <div class="about-highlights-grid">
+                            <div class="about-pill-card">
+                                <i class="fas fa-user-check"></i>
+                                <h4>HR & Talent Acquisition</h4>
+                                <p>Candidate screening, interview coordination & recruitment pipelines.</p>
+                            </div>
+                            <div class="about-pill-card">
+                                <i class="fas fa-handshake"></i>
+                                <h4>Employee & Client Relations</h4>
+                                <p>Stakeholder follow-ups, client liaison & cross-functional alignment.</p>
+                            </div>
+                            <div class="about-pill-card">
+                                <i class="fas fa-table"></i>
+                                <h4>Operations & Master Sheets</h4>
+                                <p>Operational data tracking, master sheets & process documentation.</p>
+                            </div>
+                            <div class="about-pill-card">
+                                <i class="fas fa-comments"></i>
+                                <h4>Communication & Teamwork</h4>
+                                <p>Professional correspondence, problem solving & high adaptability.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: 3D Holographic Identity Card -->
+                    <div class="about-card-3d reveal-on-scroll" data-tilt data-tilt-max="8">
+                        <div class="profile-avatar-wrap">
+                            <div class="avatar-hologram">
+                                <div class="avatar-img-wrap">
+                                    <img src="assets/profile.jpg" alt="Thukivakam Chaturya" class="avatar-img">
+                                </div>
+                            </div>
+                            <h3 style="font-size: 1.35rem; font-weight: 800; margin-top: 1rem; color: #fff;">Thukivakam Chaturya</h3>
+                            <p style="font-size: 0.85rem; color: var(--accent); font-weight: 600;">HR & Business Operations • People Management</p>
+                        </div>
+
+                        <ul class="profile-info-list">
+                            <li>
+                                <span class="info-label"><i class="fas fa-briefcase"></i> Focus</span>
+                                <span class="info-val">HR & Business Operations</span>
+                            </li>
+                            <li>
+                                <span class="info-label"><i class="fas fa-university"></i> Institution</span>
+                                <span class="info-val">Alliance University</span>
+                            </li>
+                            <li>
+                                <span class="info-label"><i class="fas fa-graduation-cap"></i> Degree</span>
+                                <span class="info-val">BCA (3rd Year)</span>
+                            </li>
+                            <li>
+                                <span class="info-label"><i class="fas fa-map-marker-alt"></i> Location</span>
+                                <span class="info-val">Bangalore, India</span>
+                            </li>
+                            <li>
+                                <span class="info-label"><i class="fas fa-language"></i> Languages</span>
+                                <span class="info-val">English, Telugu</span>
+                            </li>
+                            <li>
+                                <span class="info-label"><i class="fas fa-heart"></i> Core Interests</span>
+                                <span class="info-val">HR Ops, Photography, Badminton</span>
+                            </li>
+                        </ul>
+
+                        <a href="#contact" class="btn-primary" style="width: 100%; justify-content: center;">
+                            <i class="fas fa-paper-plane"></i> Let's Connect
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             3. SKILLS SECTION (Interactive 3D Tilt Cards)
+             ========================================================================== -->
+        <section id="skills">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag"><i class="fas fa-tools"></i> Capabilities</span>
+                    <h2 class="section-title">Core <span class="text-gradient">Skills</span></h2>
+                    <p class="section-subtitle">Dedicated HR operations, candidate coordination, business processes, and data analytics tools.</p>
+                </div>
+
+                <!-- Skill Filter Tabs -->
+                <div class="skills-filter-container reveal-on-scroll">
+                    <button class="skill-filter-btn active" data-filter="all">All Skills</button>
+                    <button class="skill-filter-btn" data-filter="data">Data & Analytics</button>
+                    <button class="skill-filter-btn" data-filter="prog">Programming & Web</button>
+                    <button class="skill-filter-btn" data-filter="database">Databases</button>
+                    <button class="skill-filter-btn" data-filter="tools">Tools & Technologies</button>
+                    <button class="skill-filter-btn" data-filter="hr">HR & Operations</button>
+                </div>
+
+                <!-- Skills Grid -->
+                <div class="skills-grid reveal-on-scroll">
+                    <!-- Candidate Screening & Recruitment -->
+                    <div class="skill-card" data-category="hr" data-tilt>
+                        <div class="skill-top">
+                            <div class="skill-icon-wrap"><i class="fas fa-user-check"></i></div>
+                            <span class="skill-badge">HR Operations</span>
+                        </div>
+                        <div>
+                            <h3>Recruitment & Screening</h3>
+                            <p class="skill-desc">Screening candidate profiles against role requirements, organizing talent pipelines, and managing initial assessments.</p>
+                        </div>
+                    </div>
+
+                    <!-- Interview & Pipeline Coordination -->
+                    <div class="skill-card" data-category="hr" data-tilt>
+                        <div class="skill-top">
+                            <div class="skill-icon-wrap"><i class="fas fa-calendar-check"></i></div>
+                            <span class="skill-badge">Talent Management</span>
+                        </div>
+                        <div>
+                            <h3>Interview Coordination</h3>
+                            <p class="skill-desc">End-to-end interview scheduling across multiple stakeholders, managing candidate correspondence, and diligent follow-ups.</p>
+                        </div>
+                    </div>
+
+                    <!-- Employee & Client Coordination -->
+                    <div class="skill-card" data-category="hr" data-tilt>
+                        <div class="skill-top">
+                            <div class="skill-icon-wrap"><i class="fas fa-handshake"></i></div>
+                            <span class="skill-badge">People Operations</span>
+                        </div>
+                        <div>
+                            <h3>Employee & Client Relations</h3>
+                            <p class="skill-desc">Liaising proactively between internal operations teams, hiring managers, and external corporate clients.</p>
+                        </div>
+                    </div>
+
+                    <!-- Master Sheets & Operational Reporting -->
+                    <div class="skill-card" data-category="hr data tools" data-tilt>
+                        <div class="skill-top">
+                            <div class="skill-icon-wrap"><i class="fas fa-table"></i></div>
+                            <span class="skill-badge">Operations & BI</span>
+                        </div>
+                        <div>
+                            <h3>Master Sheets & Reporting</h3>
+                            <p class="skill-desc">Maintaining central operational tracking sheets, auditing data accuracy, generating summary reports, and managing dashboards.</p>
+                        </div>
+                    </div>
+
+                    <!-- Communication & Teamwork -->
+                    <div class="skill-card" data-category="hr" data-tilt>
+                        <div class="skill-top">
+                            <div class="skill-icon-wrap"><i class="fas fa-comments"></i></div>
+                            <span class="skill-badge">Interpersonal</span>
+                        </div>
+                        <div>
+                            <h3>Communication & Teamwork</h3>
+                            <p class="skill-desc">Empathetic active listening, professional written and verbal correspondence, and collaborative problem solving.</p>
+                        </div>
+                    </div>
+
+                    <!-- Time Management & Adaptability -->
+                    <div class="skill-card" data-category="hr" data-tilt>
+                        <div class="skill-top">
+                            <div class="skill-icon-wrap"><i class="fas fa-hourglass-half"></i></div>
+                            <span class="skill-badge">Workplace Skills</span>
+                        </div>
+                        <div>
+                            <h3>Time Management</h3>
+                            <p class="skill-desc">Prioritizing concurrent operational tasks, meeting tight recruitment deadlines, and adapting swiftly to evolving needs.</p>
+                        </div>
+                    </div>
+
+                    <!-- Microsoft Excel -->
+                    <div class="skill-card" data-category="data tools hr" data-tilt>
+                        <div class="skill-top">
+                            <div class="skill-icon-wrap"><i class="fas fa-file-excel"></i></div>
+                            <span class="skill-badge">Analytics & Ops</span>
+                        </div>
+                        <div>
+                            <h3>Microsoft Excel</h3>
+                            <p class="skill-desc">Master sheets, pivot tables, data formulas, operational reporting, and data validation.</p>
+                        </div>
+                    </div>
+
+                    <!-- Power BI -->
+                    <div class="skill-card" data-category="data tools" data-tilt>
+                        <div class="skill-top">
+                            <div class="skill-icon-wrap"><i class="fas fa-chart-bar"></i></div>
+                            <span class="skill-badge">Business Intelligence</span>
+                        </div>
+                        <div>
+                            <h3>Power BI</h3>
+                            <p class="skill-desc">Interactive dashboard architecture, KPI metrics, regional trend analytics, and data transformation.</p>
+                        </div>
+                    </div>
+
+                    <!-- SQL -->
+                    <div class="skill-card" data-category="data database" data-tilt>
+                        <div class="skill-top">
+                            <div class="skill-icon-wrap"><i class="fas fa-database"></i></div>
+                            <span class="skill-badge">Data & Querying</span>
+                        </div>
+                        <div>
+                            <h3>SQL</h3>
+                            <p class="skill-desc">Relational query crafting, aggregations, data joins, indexing, and structured database analysis.</p>
+                        </div>
+                    </div>
+
+                    <!-- Data Visualization -->
+                    <div class="skill-card" data-category="data" data-tilt>
+                        <div class="skill-top">
+                            <div class="skill-icon-wrap"><i class="fas fa-chart-line"></i></div>
+                            <span class="skill-badge">Analytics</span>
+                        </div>
+                        <div>
+                            <h3>Data Visualization</h3>
+                            <p class="skill-desc">Visual storytelling, charting trends, categorical distributions, and executive KPI summaries.</p>
+                        </div>
+                    </div>
+
+                    <!-- Python -->
+                    <div class="skill-card" data-category="prog" data-tilt>
+                        <div class="skill-top">
+                            <div class="skill-icon-wrap"><i class="fab fa-python"></i></div>
+                            <span class="skill-badge">Programming</span>
+                        </div>
+                        <div>
+                            <h3>Python</h3>
+                            <p class="skill-desc">Core language for machine learning, statistical modeling, data wrangling, and algorithmic problem solving.</p>
+                        </div>
+                    </div>
+
+                    <!-- MySQL -->
+                    <div class="skill-card" data-category="database" data-tilt>
+                        <div class="skill-top">
+                            <div class="skill-icon-wrap"><i class="fas fa-server"></i></div>
+                            <span class="skill-badge">RDBMS</span>
+                        </div>
+                        <div>
+                            <h3>MySQL</h3>
+                            <p class="skill-desc">Database schema normalization, relational tables, query execution, and transactional data integrity.</p>
+                        </div>
+                    </div>
+
+                    <!-- MongoDB -->
+                    <div class="skill-card" data-category="database" data-tilt>
+                        <div class="skill-top">
+                            <div class="skill-icon-wrap"><i class="fas fa-leaf"></i></div>
+                            <span class="skill-badge">NoSQL</span>
+                        </div>
+                        <div>
+                            <h3>MongoDB</h3>
+                            <p class="skill-desc">Document-based data models, JSON/BSON structures, collections, and flexible schema querying.</p>
+                        </div>
+                    </div>
+
+                    <!-- HTML5 & CSS3 -->
+                    <div class="skill-card" data-category="prog" data-tilt>
+                        <div class="skill-top">
+                            <div class="skill-icon-wrap"><i class="fab fa-html5"></i></div>
+                            <span class="skill-badge">Web Foundations</span>
+                        </div>
+                        <div>
+                            <h3>HTML5 & CSS3</h3>
+                            <p class="skill-desc">Modern semantic layout construction, responsive styling, Flexbox, Grid, and UI presentation.</p>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript & Node.js -->
+                    <div class="skill-card" data-category="prog" data-tilt>
+                        <div class="skill-top">
+                            <div class="skill-icon-wrap"><i class="fab fa-js-square"></i></div>
+                            <span class="skill-badge">Web Development</span>
+                        </div>
+                        <div>
+                            <h3>JavaScript & Node.js</h3>
+                            <p class="skill-desc">Client-side interactivity, DOM manipulation, asynchronous operations, and backend runtime basics.</p>
+                        </div>
+                    </div>
+
+                    <!-- Jupyter Notebook -->
+                    <div class="skill-card" data-category="tools tech" data-tilt>
+                        <div class="skill-top">
+                            <div class="skill-icon-wrap"><i class="fas fa-book-open"></i></div>
+                            <span class="skill-badge">Exploration</span>
+                        </div>
+                        <div>
+                            <h3>Jupyter Notebook</h3>
+                            <p class="skill-desc">Interactive computational notebooks for iterative data analysis, data cleaning, and ML experiments.</p>
+                        </div>
+                    </div>
+
+                    <!-- Git -->
+                    <div class="skill-card" data-category="tools" data-tilt>
+                        <div class="skill-top">
+                            <div class="skill-icon-wrap"><i class="fab fa-git-alt"></i></div>
+                            <span class="skill-badge">Version Control</span>
+                        </div>
+                        <div>
+                            <h3>Git</h3>
+                            <p class="skill-desc">Code repository management, branch tracking, versioning, and collaborative GitHub workflows.</p>
+                        </div>
+                    </div>
+
+                    <!-- Google Sheets -->
+                    <div class="skill-card" data-category="tools hr data" data-tilt>
+                        <div class="skill-top">
+                            <div class="skill-icon-wrap"><i class="fas fa-table"></i></div>
+                            <span class="skill-badge">Cloud Spreadsheets</span>
+                        </div>
+                        <div>
+                            <h3>Google Sheets</h3>
+                            <p class="skill-desc">Collaborative spreadsheet workflows, cloud data collection, team operational sheets, and sharing.</p>
+                        </div>
+                    </div>
+
+                    <!-- Microsoft Office Suite -->
+                    <div class="skill-card" data-category="tools hr" data-tilt>
+                        <div class="skill-top">
+                            <div class="skill-icon-wrap"><i class="fas fa-desktop"></i></div>
+                            <span class="skill-badge">Productivity</span>
+                        </div>
+                        <div>
+                            <h3>Microsoft Office</h3>
+                            <p class="skill-desc">Word technical documentation, PowerPoint presentations, Excel reporting, and Adobe Acrobat workflows.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             4. EXPERIENCE SECTION (3D Interactive Timeline)
+             ========================================================================== -->
+        <section id="experience">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag"><i class="fas fa-briefcase"></i> Experience</span>
+                    <h2 class="section-title">Work <span class="text-gradient">Experience</span></h2>
+                    <p class="section-subtitle">Real-world internships in operational data handling, recruitment workflows, and business processes.</p>
+                </div>
+
+                <div class="timeline-wrap">
+                    <!-- Timeline Item 1: Vayuvflux -->
+                    <div class="timeline-item reveal-on-scroll">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card" data-tilt data-tilt-max="5">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="company-title">Vayuvflux</h3>
+                                    <h4 class="role-title">HR & Business Lead Operations Intern</h4>
+                                </div>
+                                <span class="timeline-badge">
+                                    <i class="far fa-calendar-alt"></i> June 2026 – Present
+                                </span>
+                            </div>
+
+                            <div class="timeline-meta">
+                                <span><i class="fas fa-globe-americas"></i> Remote (Texas, USA)</span>
+                                <span><i class="fas fa-building"></i> Consulting & Operations</span>
+                            </div>
+
+                            <ul class="timeline-responsibilities">
+                                <li>
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span>Facilitated cross-functional employee and client coordination to ensure timely operational execution.</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span>Managed recruitment activities, candidate profile screening, and end-to-end interview coordination.</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span>Conducted proactive stakeholder follow-ups and pipeline communications.</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span>Maintained operational tracking dashboards and compiled regular business performance reports.</span>
+                                </li>
+                            </ul>
+
+                            <div class="tech-tags-row">
+                                <span class="tech-tag">Operations Coordination</span>
+                                <span class="tech-tag">Dashboard Management</span>
+                                <span class="tech-tag">Candidate Screening</span>
+                                <span class="tech-tag">Reporting</span>
+                                <span class="tech-tag">Client Communications</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2: Virgio -->
+                    <div class="timeline-item reveal-on-scroll">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card" data-tilt data-tilt-max="5">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="company-title">Virgio (Ameyam Enterprise Private Limited)</h3>
+                                    <h4 class="role-title">Tech Operations Intern</h4>
+                                </div>
+                                <span class="timeline-badge">
+                                    <i class="far fa-calendar-alt"></i> Dec 2025 – Mar 2026 (3 Months)
+                                </span>
+                            </div>
+
+                            <div class="timeline-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka 560068</span>
+                                <span><i class="fas fa-industry"></i> Tech Operations</span>
+                            </div>
+
+                            <ul class="timeline-responsibilities">
+                                <li>
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span>Worked under the Tech Operations team supporting day-to-day inventory management workflows.</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span>Structured and maintained master sheets for accurate operational data tracking and reconciliation.</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span>Assisted in synthesizing inventory-related reports and documenting internal standard operating processes.</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span>Analyzed operational datasets to flag inconsistencies and streamline supply workflows.</span>
+                                </li>
+                            </ul>
+
+                            <div class="tech-tags-row">
+                                <span class="tech-tag">Tech Operations</span>
+                                <span class="tech-tag">Inventory Management</span>
+                                <span class="tech-tag">Master Sheets</span>
+                                <span class="tech-tag">Operational Data</span>
+                                <span class="tech-tag">Process Documentation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             5. PROJECTS SECTION (Interactive 3D Cards)
+             ========================================================================== -->
+        <section id="projects">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag"><i class="fas fa-code-branch"></i> Portfolio</span>
+                    <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+                    <p class="section-subtitle">Academic projects, deep learning coursework, and analytical studies showcasing hands-on technical execution.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Power BI Sales Dashboard -->
+                    <div class="project-card reveal-on-scroll" data-tilt data-tilt-max="8">
+                        <div>
+                            <div class="project-top-row">
+                                <span class="project-badge-tag badge-academic">Academic Project</span>
+                                <div class="project-icon-glow"><i class="fas fa-chart-pie"></i></div>
+                            </div>
+                            <h3 class="project-title">Power BI Sales Dashboard</h3>
+                            <p class="project-desc">
+                                Built an interactive Power BI dashboard on the Sample Superstore dataset to analyze sales, profit margins, and regional performance trends across diverse product categories and customer segments.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <div class="tech-tags-row">
+                                <span class="tech-tag">Power BI</span>
+                                <span class="tech-tag">Excel</span>
+                                <span class="tech-tag">Data Analytics</span>
+                                <span class="tech-tag">Visualization</span>
+                            </div>
+                            <button class="btn-card-action" onclick="openProjectModal('power-bi')">
+                                <span>Explore Details</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Deep Learning Architecture Comparison -->
+                    <div class="project-card reveal-on-scroll" data-tilt data-tilt-max="8">
+                        <div>
+                            <div class="project-top-row">
+                                <span class="project-badge-tag badge-coursework">Coursework Report</span>
+                                <div class="project-icon-glow"><i class="fas fa-network-wired"></i></div>
+                            </div>
+                            <h3 class="project-title">Deep Learning Architecture Comparison</h3>
+                            <p class="project-desc">
+                                Authored an academic report comparing Feedforward (FNN), Convolutional (CNN), and Recurrent Neural Networks (RNN), including custom diagrams illustrating parameter sharing and structural differences.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <div class="tech-tags-row">
+                                <span class="tech-tag">Deep Learning</span>
+                                <span class="tech-tag">FNN • CNN • RNN</span>
+                                <span class="tech-tag">Neural Models</span>
+                            </div>
+                            <button class="btn-card-action" onclick="openProjectModal('dl-comparison')">
+                                <span>Explore Details</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Ethical Considerations in AI -->
+                    <div class="project-card reveal-on-scroll" data-tilt data-tilt-max="8">
+                        <div>
+                            <div class="project-top-row">
+                                <span class="project-badge-tag badge-coursework">Coursework Report</span>
+                                <div class="project-icon-glow"><i class="fas fa-shield-alt"></i></div>
+                            </div>
+                            <h3 class="project-title">Ethical Considerations in AI</h3>
+                            <p class="project-desc">
+                                Researched and authored a study addressing bias, data privacy, and transparency challenges in modern AI systems, proposing structured frameworks for algorithmic fairness and governance.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <div class="tech-tags-row">
+                                <span class="tech-tag">AI Ethics</span>
+                                <span class="tech-tag">Algorithmic Bias</span>
+                                <span class="tech-tag">Privacy</span>
+                                <span class="tech-tag">Transparency</span>
+                            </div>
+                            <button class="btn-card-action" onclick="openProjectModal('ai-ethics')">
+                                <span>Explore Details</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Garbage Management System (Explicitly Labeled Academic Concept) -->
+                    <div class="project-card reveal-on-scroll" data-tilt data-tilt-max="8">
+                        <div>
+                            <div class="project-top-row">
+                                <span class="project-badge-tag badge-concept">Academic Concept • Not Deployed</span>
+                                <div class="project-icon-glow"><i class="fas fa-recycle"></i></div>
+                            </div>
+                            <h3 class="project-title">Garbage Management System</h3>
+                            <p class="project-desc">
+                                Conceptual project focused on improving municipal waste management through better garbage collection workflows, waste segregation methods, and tracking concepts. Developed strictly as an academic concept.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <div class="tech-tags-row">
+                                <span class="tech-tag">Waste Management</span>
+                                <span class="tech-tag">Sustainability</span>
+                                <span class="tech-tag">Technology Concept</span>
+                            </div>
+                            <button class="btn-card-action" onclick="openProjectModal('garbage-system')">
+                                <span>Explore Details</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             6. EDUCATION SECTION (3D Timeline Cards)
+             ========================================================================== -->
+        <section id="education">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag"><i class="fas fa-user-graduate"></i> Academic Journey</span>
+                    <h2 class="section-title">Educational <span class="text-gradient">Milestones</span></h2>
+                    <p class="section-subtitle">Consistent academic foundation spanning secondary school through university AI & ML specialization.</p>
+                </div>
+
+                <div class="education-grid">
+                    <!-- UG Degree -->
+                    <div class="education-card reveal-on-scroll" data-tilt>
+                        <span class="edu-year-pill"><i class="far fa-calendar-check"></i> Aug 2024 – Present</span>
+                        <div>
+                            <h3>BCA – Artificial Intelligence & Machine Learning</h3>
+                            <p class="edu-inst">Alliance University</p>
+                            <p class="edu-loc"><i class="fas fa-map-pin"></i> Bangalore, Karnataka</p>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                                Currently in 3rd Year. Rigorous coursework in machine learning, deep learning, databases, data structures, and statistics.
+                            </p>
+                        </div>
+                        <div class="edu-score-box">
+                            <span class="score-label">Cumulative GPA</span>
+                            <span class="score-val text-accent">7.0 / 10.0</span>
+                        </div>
+                    </div>
+
+                    <!-- 12th Grade -->
+                    <div class="education-card reveal-on-scroll" data-tilt>
+                        <span class="edu-year-pill"><i class="far fa-calendar-check"></i> Completed Mar 2023</span>
+                        <div>
+                            <h3>Intermediate / 12th Standard</h3>
+                            <p class="edu-inst">Sanskriti Junior College</p>
+                            <p class="edu-loc"><i class="fas fa-map-pin"></i> Tirupati, Andhra Pradesh</p>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                                Higher secondary curriculum focusing on mathematical sciences, analytical reasoning, and core academic fundamentals.
+                            </p>
+                        </div>
+                        <div class="edu-score-box">
+                            <span class="score-label">Board Percentage</span>
+                            <span class="score-val text-accent">81.8%</span>
+                        </div>
+                    </div>
+
+                    <!-- 10th Grade -->
+                    <div class="education-card reveal-on-scroll" data-tilt>
+                        <span class="edu-year-pill"><i class="far fa-calendar-check"></i> Completed Jun 2021</span>
+                        <div>
+                            <h3>10th Standard (SSC)</h3>
+                            <p class="edu-inst">Spring Dale Public School</p>
+                            <p class="edu-loc"><i class="fas fa-map-pin"></i> Tirupati, Andhra Pradesh</p>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                                Completed secondary education with exemplary academic distinction and strong performance across all subjects.
+                            </p>
+                        </div>
+                        <div class="edu-score-box">
+                            <span class="score-label">Final Percentage</span>
+                            <span class="score-val" style="color: #34d399;">100%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             7. CERTIFICATIONS SECTION
+             ========================================================================== -->
+        <section id="certifications">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag"><i class="fas fa-certificate"></i> Qualifications</span>
+                    <h2 class="section-title">Verified <span class="text-gradient">Certifications</span></h2>
+                    <p class="section-subtitle">Specialized credentials from recognized academic institutions and industry leaders.</p>
+                </div>
+
+                <div class="cert-grid">
+                    <!-- IBM Statistics -->
+                    <div class="cert-card reveal-on-scroll" data-tilt>
+                        <div class="cert-icon"><i class="fas fa-square-root-alt"></i></div>
+                        <div class="cert-info">
+                            <h4>Statistics for Data Science</h4>
+                            <p class="cert-issuer">IBM</p>
+                            <span class="cert-tag"><i class="fas fa-check"></i> Verified Coursework</span>
+                        </div>
+                    </div>
+
+                    <!-- UIUC Data Visualization -->
+                    <div class="cert-card reveal-on-scroll" data-tilt>
+                        <div class="cert-icon"><i class="fas fa-chart-area"></i></div>
+                        <div class="cert-info">
+                            <h4>Data Visualization</h4>
+                            <p class="cert-issuer">University of Illinois Urbana-Champaign</p>
+                            <span class="cert-tag"><i class="fas fa-check"></i> Verified Coursework</span>
+                        </div>
+                    </div>
+
+                    <!-- Meta Databases -->
+                    <div class="cert-card reveal-on-scroll" data-tilt>
+                        <div class="cert-icon"><i class="fas fa-database"></i></div>
+                        <div class="cert-info">
+                            <h4>Introduction to Databases</h4>
+                            <p class="cert-issuer">Meta</p>
+                            <span class="cert-tag"><i class="fas fa-check"></i> Verified Coursework</span>
+                        </div>
+                    </div>
+
+                    <!-- Machine Learning with Python -->
+                    <div class="cert-card reveal-on-scroll" data-tilt>
+                        <div class="cert-icon"><i class="fas fa-brain"></i></div>
+                        <div class="cert-info">
+                            <h4>Machine Learning with Python</h4>
+                            <p class="cert-issuer">Machine Learning Coursework</p>
+                            <span class="cert-tag"><i class="fas fa-check"></i> Technical Specialization</span>
+                        </div>
+                    </div>
+
+                    <!-- AI with Python -->
+                    <div class="cert-card reveal-on-scroll" data-tilt>
+                        <div class="cert-icon"><i class="fas fa-robot"></i></div>
+                        <div class="cert-info">
+                            <h4>AI with Python</h4>
+                            <p class="cert-issuer">Artificial Intelligence Coursework</p>
+                            <span class="cert-tag"><i class="fas fa-check"></i> Technical Specialization</span>
+                        </div>
+                    </div>
+
+                    <!-- Business Analytics -->
+                    <div class="cert-card reveal-on-scroll" data-tilt>
+                        <div class="cert-icon"><i class="fas fa-briefcase"></i></div>
+                        <div class="cert-info">
+                            <h4>Business Analytics</h4>
+                            <p class="cert-issuer">Business Intelligence Coursework</p>
+                            <span class="cert-tag"><i class="fas fa-check"></i> Applied Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             8. ACHIEVEMENTS & HIGHLIGHTS SECTION
+             ========================================================================== -->
+        <section id="highlights">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag"><i class="fas fa-award"></i> Documented Highlights</span>
+                    <h2 class="section-title">Key <span class="text-gradient">Highlights</span></h2>
+                    <p class="section-subtitle">Demonstrated strengths and core milestones established through academic and industry engagements.</p>
+                </div>
+
+                <div class="highlights-grid">
+                    <div class="highlight-box reveal-on-scroll">
+                        <div class="highlight-icon-circle"><i class="fas fa-industry"></i></div>
+                        <h4>Industry Tech Operations</h4>
+                        <p>Gained practical industry exposure through hands-on internships supporting inventory management, master data sheets, and internal workflows.</p>
+                    </div>
+
+                    <div class="highlight-box reveal-on-scroll">
+                        <div class="highlight-icon-circle"><i class="fas fa-laptop-code"></i></div>
+                        <h4>Multi-Tool Analytical Competence</h4>
+                        <p>Developed hands-on experience in Power BI, Excel, SQL, and Python across coursework reports, data dashboards, and personal projects.</p>
+                    </div>
+
+                    <div class="highlight-box reveal-on-scroll">
+                        <div class="highlight-icon-circle"><i class="fas fa-handshake"></i></div>
+                        <h4>Communication & Teamwork</h4>
+                        <p>Consistently demonstrated strong interpersonal communication, client coordination, proactive teamwork, and adaptability across dynamic environments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             9. RESUME SECTION & BANNER
+             ========================================================================== -->
+        <section id="resume">
+            <div class="container">
+                <div class="resume-banner-card reveal-on-scroll">
+                    <div class="resume-banner-text">
+                        <span class="section-tag" style="margin-bottom: 0.75rem;"><i class="fas fa-file-invoice"></i> Official Resume</span>
+                        <h3>Review My Full Credentials</h3>
+                        <p>Explore my comprehensive resume detailing academic performance, verified technical skills, coursework, and operational experience.</p>
+                    </div>
+                    <div class="resume-banner-actions">
+                        <button class="btn-primary" onclick="openResumeModal()">
+                            <i class="fas fa-eye"></i> View Digital Resume
+                        </button>
+                        <button class="btn-secondary" onclick="openResumeModal(); setTimeout(() => window.print(), 300);">
+                            <i class="fas fa-download"></i> Print / Download PDF
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             10. CONTACT SECTION ("Let's Connect")
+             ========================================================================== -->
+        <section id="contact">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag"><i class="fas fa-paper-plane"></i> Get in Touch</span>
+                    <h2 class="section-title">Let's <span class="text-gradient">Connect</span></h2>
+                    <p class="section-subtitle">Interested in collaborating or discussing full-time opportunities, internships, or data projects? Reach out directly.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Contact Details & Social Links -->
+                    <div class="contact-info-col reveal-on-scroll">
+                        <!-- Email Card -->
+                        <div class="contact-card-item">
+                            <div class="contact-card-left">
+                                <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <h5>Email Address</h5>
+                                    <a href="mailto:thukivakamchaturyareddyy@gmail.com">thukivakamchaturyareddyy@gmail.com</a>
+                                </div>
+                            </div>
+                            <button class="btn-copy" onclick="copyToClipboard('thukivakamchaturyareddyy@gmail.com', 'Email')">
+                                <i class="far fa-copy"></i>
+                            </button>
+                        </div>
+
+                        <!-- Phone Card -->
+                        <div class="contact-card-item">
+                            <div class="contact-card-left">
+                                <div class="contact-card-icon"><i class="fas fa-phone-alt"></i></div>
+                                <div>
+                                    <h5>Phone Number</h5>
+                                    <a href="tel:+919652330888">+91 9652330888</a>
+                                </div>
+                            </div>
+                            <button class="btn-copy" onclick="copyToClipboard('+919652330888', 'Phone Number')">
+                                <i class="far fa-copy"></i>
+                            </button>
+                        </div>
+
+                        <!-- Location Card -->
+                        <div class="contact-card-item">
+                            <div class="contact-card-left">
+                                <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div>
+                                    <h5>Current Location</h5>
+                                    <p>Bangalore, Karnataka, India</p>
+                                </div>
+                            </div>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="fas fa-check-circle text-accent"></i> Active</span>
+                        </div>
+
+                        <!-- Social Grid -->
+                        <div class="contact-social-grid">
+                            <a href="https://linkedin.com/in/chaturyareddy-thukivakam-206023326/" target="_blank" rel="noopener noreferrer" class="contact-social-btn">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn Profile</span>
+                            </a>
+                            <a href="https://github.com/Chaturyathukivakam" target="_blank" rel="noopener noreferrer" class="contact-social-btn">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub Repository</span>
+                            </a>
+                            <a href="https://hackerrank.com/profile/thukivakamc" target="_blank" rel="noopener noreferrer" class="contact-social-btn">
+                                <i class="fab fa-hackerrank"></i>
+                                <span>HackerRank</span>
+                            </a>
+                            <a href="https://leetcode.com/u/Thukivakam%20Chaturya/" target="_blank" rel="noopener noreferrer" class="contact-social-btn">
+                                <i class="fas fa-code"></i>
+                                <span>LeetCode</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Modern Contact Form -->
+                    <div class="contact-form-card reveal-on-scroll">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="formName"><i class="fas fa-user"></i> Your Name *</label>
+                                <input type="text" id="formName" class="form-control" placeholder="Enter your full name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="formEmail"><i class="fas fa-envelope"></i> Email Address *</label>
+                                <input type="email" id="formEmail" class="form-control" placeholder="name@company.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="formSubject"><i class="fas fa-tag"></i> Subject</label>
+                                <input type="text" id="formSubject" class="form-control" placeholder="Inquiry / Opportunity / Collaboration">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="formMessage"><i class="fas fa-comment-dots"></i> Message *</label>
+                                <textarea id="formMessage" class="form-control" placeholder="Write your message here..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-submit">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>Send Message</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <a href="#hero" class="logo">
+                    Chaturya<span class="logo-dot"></span>
+                </a>
+                <ul class="footer-nav">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <p class="footer-copy">
+                    &copy; 2026 Thukivakam Chaturya. All information strictly grounded in verified technical credentials.
+                </p>
+                <p class="footer-copy" style="font-size: 0.8rem; color: var(--text-muted);">
+                    Crafted with Three.js • WebGL • Vanilla JavaScript
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTopBtn" aria-label="Scroll back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer"></div>
+
+    <!-- ==========================================================================
+         Project Details Modal
+         ========================================================================== -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-box">
+            <button class="modal-close-btn" onclick="closeProjectModal()" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="modal-header-row">
+                <span class="project-badge-tag badge-academic" id="modalProjectBadge">Academic Project</span>
+                <h3 id="modalProjectTitle" style="margin-top: 0.5rem;">Project Title</h3>
+                <p id="modalProjectCategory" style="color: var(--accent); font-size: 0.9rem; font-weight: 600;">Category</p>
+            </div>
+
+            <p id="modalProjectDesc" style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.5rem;"></p>
+
+            <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.75rem; color: #fff;">Key Technical Highlights & Outcomes</h4>
+            <ul class="modal-highlights-list" id="modalProjectHighlights"></ul>
+
+            <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.75rem; color: #fff;">Technologies & Tools</h4>
+            <div class="tech-tags-row" id="modalProjectTools" style="margin-bottom: 1.5rem;"></div>
+
+            <button class="btn-secondary" onclick="closeProjectModal()" style="width: 100%; justify-content: center;">
+                Close Preview
+            </button>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+         Resume Modal (High-Fidelity Printable CV)
+         ========================================================================== -->
+    <div class="modal-overlay" id="resumeModal">
+        <div class="modal-box resume-modal-box">
+            <button class="modal-close-btn" onclick="closeResumeModal()" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; padding-right: 2.5rem; flex-wrap: wrap; gap: 0.75rem;">
+                <h3 style="font-size: 1.4rem; font-weight: 800; color: #fff;"><i class="fas fa-file-invoice text-accent"></i> Verified Resume</h3>
+                <div class="resume-modal-actions" style="display: flex; gap: 0.75rem;">
+                    <button class="btn-primary" onclick="window.print()" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">
+                        <i class="fas fa-print"></i> Print / Save as PDF
+                    </button>
+                </div>
+            </div>
+
+            <!-- Authentic Printable Resume Sheet -->
+            <div class="resume-sheet">
+                <div class="resume-header-flex">
+                    <div class="resume-header-text">
+                        <h1>THUKIVAKAM CHATURYA</h1>
+                        <div class="resume-subtitle">BCA STUDENT | HR & OPERATIONS</div>
+
+                        <div class="resume-contact-bar">
+                            <span><i class="fas fa-phone"></i> +91 9652330888</span>
+                            <span><i class="fas fa-envelope"></i> thukivakamchaturyareddyy@gmail.com</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Bangalore, India</span>
+                            <span><i class="fab fa-linkedin"></i> linkedin.com/in/chaturyareddy-thukivakam-206023326</span>
+                            <span><i class="fab fa-github"></i> github.com/Chaturyathukivakam</span>
+                        </div>
+                    </div>
+                    <div class="resume-header-photo">
+                        <img src="assets/profile.jpg" alt="Thukivakam Chaturya">
+                    </div>
+                </div>
+
+                <div class="resume-sec-title">Profile</div>
+                <p style="margin-bottom: 0.85rem; color: #334155;">
+                    Final-year BCA (AI & ML) student at Alliance University with a strong academic project portfolio spanning deep learning, data analytics, and business intelligence. Comfortable working with Python, SQL, and Power BI, with solid communication, teamwork, and problem-solving abilities. Looking for opportunities to apply technical and analytical skills in a dynamic, growth-oriented role.
+                </p>
+
+                <div class="resume-sec-title">Work Experience</div>
+                <div class="resume-entry-header">
+                    <span>HR & Business Lead Operations Intern</span>
+                    <span>June 2026 – Present</span>
+                </div>
+                <div class="resume-entry-sub">
+                    <span>Vayuvflux</span>
+                    <span>Remote (Texas, USA)</span>
+                </div>
+                <ul class="resume-bullet-list">
+                    <li>Supporting HR and business development operations, including employee and client coordination.</li>
+                    <li>Managing recruitment activities, candidate profile screening, and interview coordination.</li>
+                    <li>Conducting proactive follow-ups, reporting, and dashboard management.</li>
+                </ul>
+
+                <div class="resume-entry-header">
+                    <span>Tech Operations Intern</span>
+                    <span>December 2025 – March 2026</span>
+                </div>
+                <div class="resume-entry-sub">
+                    <span>Virgio (Ameyam Enterprise Private Limited)</span>
+                    <span>Bengaluru, Karnataka 560068</span>
+                </div>
+                <ul class="resume-bullet-list">
+                    <li>Worked under the Tech Operations team supporting inventory management and reporting.</li>
+                    <li>Assisted with inventory-related reports, operational data management, and documentation.</li>
+                    <li>Worked with master sheets and internal operational processes.</li>
+                </ul>
+
+                <div class="resume-sec-title">Academic Projects & Coursework</div>
+                <div class="resume-entry-header">
+                    <span>Power BI Sales Dashboard</span>
+                    <span>Academic Project</span>
+                </div>
+                <ul class="resume-bullet-list">
+                    <li>Built an interactive Power BI dashboard on the Sample Superstore dataset to analyze sales, profit, and regional performance trends.</li>
+                </ul>
+
+                <div class="resume-entry-header">
+                    <span>Deep Learning Architecture Comparison</span>
+                    <span>Coursework</span>
+                </div>
+                <ul class="resume-bullet-list">
+                    <li>Authored a report comparing FNN, CNN, and RNN architectures, including custom diagrams to illustrate structural differences.</li>
+                </ul>
+
+                <div class="resume-entry-header">
+                    <span>Ethical Considerations in AI</span>
+                    <span>Coursework</span>
+                </div>
+                <ul class="resume-bullet-list">
+                    <li>Researched and wrote a report on bias, privacy, and transparency challenges in AI systems.</li>
+                </ul>
+
+                <div class="resume-entry-header">
+                    <span>Garbage Management System</span>
+                    <span>Academic Concept (Not Deployed)</span>
+                </div>
+                <ul class="resume-bullet-list">
+                    <li>Worked on a concept project focused on improving waste management through better garbage collection, segregation and monitoring. Developed as an academic/project concept.</li>
+                </ul>
+
+                <div class="resume-sec-title">Education</div>
+                <div class="resume-entry-header">
+                    <span>BCA – Artificial Intelligence & Machine Learning</span>
+                    <span>Aug 2024 – Present</span>
+                </div>
+                <div class="resume-entry-sub">
+                    <span>Alliance University, Bangalore, Karnataka</span>
+                    <span>CGPA: 7.0 (Current Status: 3rd year)</span>
+                </div>
+
+                <div class="resume-entry-header">
+                    <span>12th / Intermediate</span>
+                    <span>March 2023</span>
+                </div>
+                <div class="resume-entry-sub">
+                    <span>Sanskriti Junior College, Tirupati, Andhra Pradesh</span>
+                    <span>Percentage: 81.8%</span>
+                </div>
+
+                <div class="resume-entry-header">
+                    <span>10th Standard</span>
+                    <span>June 2021</span>
+                </div>
+                <div class="resume-entry-sub">
+                    <span>Spring Dale Public School, Tirupati, Andhra Pradesh</span>
+                    <span>Percentage: 100%</span>
+                </div>
+
+                <div class="resume-sec-title">Technical Skills</div>
+                <p style="color: #334155; margin-bottom: 0.5rem;">
+                    <strong>Programming:</strong> Python<br>
+                    <strong>Data Analytics & Visualization:</strong> Power BI, Excel, Data Visualization<br>
+                    <strong>Databases:</strong> SQL, MySQL, MongoDB<br>
+                    <strong>Web Development:</strong> HTML, CSS, JavaScript, Node.js<br>
+                    <strong>Other Tools:</strong> Jupyter Notebook, Git, Google Sheets, Microsoft Office
+                </p>
+
+                <div class="resume-sec-title">Certifications</div>
+                <p style="color: #334155;">
+                    • Statistics for Data Science — IBM<br>
+                    • Data Visualization — University of Illinois Urbana-Champaign<br>
+                    • Introduction to Databases — Meta<br>
+                    • Machine Learning with Python<br>
+                    • AI with Python<br>
+                    • Business Analytics
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Scripts -->
+    <!-- Three.js (r128) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- 3D Scene Initialization -->
+    <script src="js/three-scene.js"></script>
+
+    <!-- Floating Particles Canvas -->
+    <script src="js/particles.js"></script>
+
+    <!-- 3D Card Tilt Engine -->
+    <script src="js/tilt.js"></script>
+
+    <!-- Main Interactivity & Scroll Logic -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
