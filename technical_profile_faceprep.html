@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Profile (FACE Prep Verified) - Thukivakam Chaturya | Alliance University</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-navy: #1e3a8a;
+            --dark-navy: #0f2757;
+            --text-dark: #1e293b;
+            --text-muted: #475569;
+            --border-color: #cbd5e1;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: var(--text-dark);
+            line-height: 1.38;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 24px 16px;
+        }
+
+        .action-bar {
+            width: 100%;
+            max-width: 820px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: #2563eb;
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+        }
+
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background-color: #fff;
+            color: #334155;
+            border: 1px solid #cbd5e1;
+        }
+
+        .btn-secondary:hover {
+            background-color: #f8fafc;
+        }
+
+        /* 1-Page A4 Sheet */
+        .profile-sheet {
+            width: 100%;
+            max-width: 820px;
+            background: #fff;
+            border: 1px solid #94a3b8;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            padding: 24px 28px;
+            box-sizing: border-box;
+        }
+
+        /* Header Row */
+        .header-banner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 14px;
+            margin-bottom: 14px;
+        }
+
+        .header-logo-img {
+            max-width: 100%;
+            height: auto;
+            max-height: 70px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Subheader Grid */
+        .subheader-grid {
+            display: grid;
+            grid-template-columns: 105px 1fr 280px;
+            gap: 14px;
+            align-items: center;
+            padding-bottom: 14px;
+            border-bottom: 1px solid #e2e8f0;
+            margin-bottom: 14px;
+        }
+
+        .candidate-photo {
+            width: 95px;
+            height: 112px;
+            object-fit: cover;
+            border-radius: 4px;
+            border: 1px solid #cbd5e1;
+        }
+
+        .candidate-meta {
+            text-align: center;
+        }
+
+        .candidate-name {
+            font-size: 1.32rem;
+            font-weight: 700;
+            color: #0f172a;
+            letter-spacing: -0.3px;
+            margin-bottom: 6px;
+        }
+
+        .badges-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+
+        .badge-img {
+            height: 24px;
+            object-fit: contain;
+        }
+
+        .portfolio-box {
+            font-size: 0.8rem;
+            color: #0f172a;
+        }
+
+        .portfolio-label {
+            font-weight: 700;
+            font-size: 0.74rem;
+            letter-spacing: 0.5px;
+            margin-bottom: 2px;
+        }
+
+        .portfolio-url {
+            color: #1e3a8a;
+            font-weight: 600;
+            text-decoration: none;
+            word-break: break-all;
+            font-size: 0.76rem;
+        }
+
+        .portfolio-url:hover {
+            text-decoration: underline;
+        }
+
+        /* Contacts List */
+        .contacts-list {
+            list-style: none;
+            font-size: 0.76rem;
+            line-height: 1.42;
+        }
+
+        .contacts-list li {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 2px;
+            color: #334155;
+            word-break: break-all;
+        }
+
+        .contacts-list a {
+            color: #1e3a8a;
+            text-decoration: none;
+        }
+
+        .contacts-list a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-icon {
+            width: 14px;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        .icon-mail { color: #64748b; }
+        .icon-phone { color: #dc2626; }
+        .icon-linkedin { color: #0077b5; }
+        .icon-github { color: #10b981; font-weight: 700; font-size: 0.68rem; }
+        .icon-hackerrank { color: #059669; font-weight: 700; font-size: 0.68rem; }
+        .icon-leetcode { color: #f59e0b; font-weight: 700; font-size: 0.68rem; }
+        .icon-figma { color: #ec4899; font-weight: 700; font-size: 0.68rem; }
+
+        /* Two-Column Section Layout */
+        .columns-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+            position: relative;
+        }
+
+        .columns-grid::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 3px;
+            background-color: #cbd5e1;
+            border-radius: 2px;
+        }
+
+        .sec-header {
+            background-color: var(--dark-navy);
+            color: #fff;
+            padding: 3px 8px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+            margin-top: 10px;
+        }
+
+        .sec-header:first-child {
+            margin-top: 0;
+        }
+
+        .sec-content {
+            font-size: 0.78rem;
+            color: #1e293b;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+
+        .sec-content strong {
+            color: #0f172a;
+        }
+
+        .project-item {
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px dashed #e2e8f0;
+        }
+
+        .project-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .project-title {
+            font-weight: 700;
+            color: #0f172a;
+            font-size: 0.84rem;
+            margin-bottom: 2px;
+        }
+
+        .project-tech {
+            font-size: 0.74rem;
+            color: #1e3a8a;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+
+        .project-desc {
+            font-size: 0.76rem;
+            color: #334155;
+            line-height: 1.38;
+        }
+
+        .bullet-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .bullet-list li {
+            position: relative;
+            padding-left: 12px;
+            margin-bottom: 4px;
+            font-size: 0.77rem;
+            color: #334155;
+        }
+
+        .bullet-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #0f172a;
+            font-weight: bold;
+        }
+
+        .cert-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .cert-list li {
+            position: relative;
+            padding-left: 12px;
+            margin-bottom: 4px;
+            font-size: 0.78rem;
+            color: #334155;
+        }
+
+        .cert-list li::before {
+            content: "–";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #0f172a;
+        }
+
+        /* Print Media Styles for crisp 1-page A4 export */
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .action-bar {
+                display: none !important;
+            }
+
+            .profile-sheet {
+                border: none;
+                box-shadow: none;
+                max-width: 100%;
+                width: 100%;
+                padding: 8mm 10mm;
+            }
+
+            @page {
+                size: A4 portrait;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Action Toolbar (Hidden when printing/saving as PDF) -->
+    <div class="action-bar">
+        <div>
+            <h2 style="font-size: 1.1rem; font-weight: 700; color: #0f172a;">Technical Profile (Question 7 - FACE prep Logo)</h2>
+            <p style="font-size: 0.8rem; color: #64748b;">With Garbage Management & GenAI Career Navigator • Ready for Submission</p>
+        </div>
+        <div style="display: flex; gap: 8px;">
+            <button class="btn btn-primary" onclick="window.print()">
+                <i class="fas fa-print"></i> Print / Save as PDF
+            </button>
+            <a href="Updated_FACE_prep_Technical_Profile.pdf" download class="btn btn-secondary">
+                <i class="fas fa-file-pdf text-danger"></i> Download PDF
+            </a>
+            <a href="Updated_FACE_prep_Technical_Profile.png" download class="btn btn-secondary">
+                <i class="fas fa-file-image"></i> Download PNG
+            </a>
+            <a href="index.html" class="btn btn-secondary">
+                <i class="fas fa-globe"></i> 3D Portfolio
+            </a>
+        </div>
+    </div>
+
+    <!-- Official Printable 1-Page Technical Profile -->
+    <div class="profile-sheet">
+        
+        <!-- Header Banner: Alliance University + NAAC Grade A+ -->
+        <div class="header-banner">
+            <img src="assets/header_logos.png" alt="Alliance University | NAAC Grade A+ Accredited" class="header-logo-img">
+        </div>
+
+        <!-- Subheader Grid: Photo, Title, Badges (with FACE prep), Portfolio Link & Contact Info -->
+        <div class="subheader-grid">
+            <div>
+                <img src="assets/resume_photo.png" alt="Thukivakam Chaturya" class="candidate-photo">
+            </div>
+
+            <div class="candidate-meta">
+                <h1 class="candidate-name">Thukivakam Chaturya</h1>
+                
+                <!-- 5 Logos Row: IBM, Meta, Illinois, Salesforce, and FACE Prep -->
+                <div class="badges-row">
+                    <img src="assets/company_badges.png" alt="IBM | Meta | University of Illinois | Salesforce" style="height: 24px; object-fit: contain;">
+                    <img src="assets/faceprep_badge.png" alt="FACE prep" style="height: 22px; object-fit: contain; margin-left: 2px;">
+                </div>
+
+                <div class="portfolio-box">
+                    <div class="portfolio-label">PORTFOLIO LINK :</div>
+                    <a href="https://chaturyathukivakam.github.io/3D-Portfolio/" target="_blank" rel="noopener noreferrer" class="portfolio-url">
+                        https://chaturyathukivakam.github.io/3D-Portfolio/
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <ul class="contacts-list">
+                    <li>
+                        <i class="fas fa-envelope contact-icon icon-mail"></i>
+                        <span>thukivakamchaturyareddyy@gmail.com</span>
+                    </li>
+                    <li style="padding-left: 20px; font-size: 0.72rem; color: #64748b;">
+                        cthukivakambca24@ced.alliance.edu.in
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt contact-icon icon-phone"></i>
+                        <span>9652330888</span>
+                    </li>
+                    <li>
+                        <i class="fab fa-linkedin contact-icon icon-linkedin"></i>
+                        <a href="https://linkedin.com/in/chaturyareddy-thukivakam-206023326/" target="_blank">linkedin.com/in/chaturyareddy-thukivakam-206023326/</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon icon-github">GH</span>
+                        <a href="https://github.com/Chaturyathukivakam" target="_blank">github.com/Chaturyathukivakam</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon icon-hackerrank">HR</span>
+                        <a href="https://hackerrank.com/profile/thukivakamc" target="_blank">hackerrank.com/profile/thukivakamc</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon icon-leetcode">LC</span>
+                        <a href="https://leetcode.com/u/Thukivakam%20Chaturya/" target="_blank">leetcode.com/u/Thukivakam Chaturya/</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon icon-figma">Fg</span>
+                        <span>thukivakamc@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 2-Column Split: Academics, Skills, Achievements | Projects, Certifications -->
+        <div class="columns-grid">
+            
+            <!-- Left Column -->
+            <div>
+                <div class="sec-header">ACADEMICS</div>
+                <div class="sec-content">
+                    <div><strong>Bachelor's Degree (UG)</strong></div>
+                    <div>BCA – Alliance University, Bangalore, Karnataka</div>
+                    <div>Specialization: Artificial Intelligence & Machine Learning</div>
+                    <div>Current Status: 3rd year</div>
+                    <div>CGPA: 7.0</div>
+                    <div style="margin-top: 5px;"><strong>Intermediate / 12th</strong></div>
+                    <div>Sanskriti Junior College</div>
+                    <div>Percentage: 81.8%</div>
+                    <div style="margin-top: 5px;"><strong>10th Standard</strong></div>
+                    <div>Spring Dale Public School</div>
+                    <div>Percentage: 100%</div>
+                </div>
+
+                <div class="sec-header">TECHNICAL SKILLS</div>
+                <div class="sec-content">
+                    <div><strong>Programming Languages:</strong> Python</div>
+                    <div style="margin-top: 3px;"><strong>Data Analytics & Visualization:</strong> Power BI, Excel, Data Visualization</div>
+                    <div style="margin-top: 3px;"><strong>Database Management:</strong> SQL, MySQL, MongoDB</div>
+                    <div style="margin-top: 3px;"><strong>Web Development:</strong> HTML, CSS, JavaScript, Node.js</div>
+                    <div style="margin-top: 3px;"><strong>Other Tools & Technologies:</strong> Jupyter Notebook, Microsoft Office, Git, Google Sheets</div>
+                </div>
+
+                <div class="sec-header">ACHIEVEMENTS</div>
+                <div class="sec-content">
+                    <ul class="bullet-list">
+                        <li>Gained practical industry experience through internship in Tech Operations.</li>
+                        <li>Developed hands-on experience in Power BI, Excel, SQL and Python through academic and personal projects.</li>
+                        <li>Consistently demonstrated strong communication, teamwork and adaptability through academic and professional experience.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Column: Garbage Management & GenAI Career Navigator -->
+            <div>
+                <div class="sec-header">PROJECTS</div>
+                <div class="sec-content">
+                    
+                    <!-- Project 1: Garbage Management System -->
+                    <div class="project-item">
+                        <div class="project-title">Garbage Management System</div>
+                        <div class="project-tech">Python &bull; Streamlit &bull; Waste Analytics &bull; Sustainability</div>
+                        <p class="project-desc">
+                            Designed an intelligent waste intelligence system to monitor municipal garbage collection schedules, waste categorization (wet, dry, e-waste), and route efficiency. Features recycling diversion metrics and environmental carbon offset tracking.
+                        </p>
+                    </div>
+
+                    <!-- Project 2: GenAI Career Navigator -->
+                    <div class="project-item">
+                        <div class="project-title">GenAI Career Navigator</div>
+                        <div class="project-tech">Generative AI &bull; LLMs &bull; Python &bull; NLP &bull; Analytics</div>
+                        <p class="project-desc">
+                            Built an AI-powered career roadmap and skills intelligence platform using Generative AI to assess candidate profiles, identify skill gaps, and generate personalized learning paths along with automated interview preparation guidance.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="sec-header">CERTIFICATIONS</div>
+                <div class="sec-content">
+                    <ul class="cert-list">
+                        <li>Statistics for Data Science – IBM</li>
+                        <li>Data Visualization – University of Illinois Urbana-Champaign</li>
+                        <li>Introduction to Databases – Meta</li>
+                        <li>Machine Learning with Python</li>
+                        <li>AI with Python</li>
+                        <li>Business Analytics</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
