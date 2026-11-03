@@ -53,7 +53,10 @@
                 </ul>
             </nav>
 
-            <div style="display: flex; align-items: center; gap: 1rem;">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <a href="technical_profile_faceprep.html" class="nav-cta-btn" style="text-decoration: none; border-color: #f97316; color: #f97316;">
+                    <i class="fas fa-id-card"></i> Technical Profile
+                </a>
                 <button class="nav-cta-btn" onclick="openResumeModal()">
                     <i class="fas fa-file-alt"></i> Resume
                 </button>
@@ -120,14 +123,18 @@
                     </p>
 
                     <!-- CTA Buttons -->
-                    <div class="hero-cta-group">
+                    <div class="hero-cta-group" style="flex-wrap: wrap;">
+                        <a href="technical_profile_faceprep.html" class="btn-primary" style="background: linear-gradient(135deg, #1e3a8a, #ea580c); box-shadow: 0 4px 15px rgba(234, 88, 12, 0.3);">
+                            <i class="fas fa-file-invoice"></i>
+                            <span>Technical Profile (FACE Prep)</span>
+                        </a>
                         <a href="#projects" class="btn-primary">
                             <span>View My Work</span>
                             <i class="fas fa-arrow-right"></i>
                         </a>
                         <button class="btn-secondary" onclick="openResumeModal()">
                             <i class="fas fa-file-download"></i>
-                            <span>View & Download Resume</span>
+                            <span>View & Download CV</span>
                         </button>
                     </div>
 
@@ -742,25 +749,78 @@
                         </div>
                     </div>
 
-                    <!-- Project 4: Garbage Management System (Explicitly Labeled Academic Concept) -->
+                    <!-- Project 4: EcoTrack - Smart Waste Management System -->
                     <div class="project-card reveal-on-scroll" data-tilt data-tilt-max="8">
                         <div>
                             <div class="project-top-row">
-                                <span class="project-badge-tag badge-concept">Academic Concept • Not Deployed</span>
+                                <span class="project-badge-tag badge-academic">Featured Project</span>
                                 <div class="project-icon-glow"><i class="fas fa-recycle"></i></div>
                             </div>
-                            <h3 class="project-title">Garbage Management System</h3>
+                            <h3 class="project-title">EcoTrack — Smart Waste Management</h3>
                             <p class="project-desc">
-                                Conceptual project focused on improving municipal waste management through better garbage collection workflows, waste segregation methods, and tracking concepts. Developed strictly as an academic concept.
+                                Interactive waste intelligence platform built with Python & Streamlit featuring real-time collection metrics, zone distribution donut charts, and carbon offset calculators.
                             </p>
                         </div>
                         <div class="project-footer">
                             <div class="tech-tags-row">
-                                <span class="tech-tag">Waste Management</span>
-                                <span class="tech-tag">Sustainability</span>
-                                <span class="tech-tag">Technology Concept</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Streamlit</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">Plotly</span>
                             </div>
                             <button class="btn-card-action" onclick="openProjectModal('garbage-system')">
+                                <span>Explore Details</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: SpendWise - Personal Finance Manager -->
+                    <div class="project-card reveal-on-scroll" data-tilt data-tilt-max="8">
+                        <div>
+                            <div class="project-top-row">
+                                <span class="project-badge-tag badge-academic">Interactive Web App</span>
+                                <div class="project-icon-glow"><i class="fas fa-wallet"></i></div>
+                            </div>
+                            <h3 class="project-title">SpendWise — Personal Finance Manager</h3>
+                            <p class="project-desc">
+                                Responsive personal budgeting web app featuring dynamic Chart.js visualizations, category expenditure breakdowns, monthly spend caps, and local storage ledger.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <div class="tech-tags-row">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">Chart.js</span>
+                                <span class="tech-tag">HTML5</span>
+                            </div>
+                            <button class="btn-card-action" onclick="openProjectModal('spendwise')">
+                                <span>Explore Details</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: AI Image Transformation & Analysis App -->
+                    <div class="project-card reveal-on-scroll" data-tilt data-tilt-max="8">
+                        <div>
+                            <div class="project-top-row">
+                                <span class="project-badge-tag badge-coursework">Deep Learning Vision</span>
+                                <div class="project-icon-glow"><i class="fas fa-camera"></i></div>
+                            </div>
+                            <h3 class="project-title">AI Image Transformation & Analysis</h3>
+                            <p class="project-desc">
+                                Computer vision application built with PyTorch and Streamlit enabling tensor-based image transformations, difference heatmaps, and MSE error loss tracking.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <div class="tech-tags-row">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">PyTorch</span>
+                                <span class="tech-tag">PIL</span>
+                                <span class="tech-tag">Computer Vision</span>
+                            </div>
+                            <button class="btn-card-action" onclick="openProjectModal('image-transform')">
                                 <span>Explore Details</span>
                                 <i class="fas fa-arrow-right"></i>
                             </button>
@@ -955,12 +1015,15 @@
                         <h3>Review My Full Credentials</h3>
                         <p>Explore my comprehensive resume detailing academic performance, verified technical skills, coursework, and operational experience.</p>
                     </div>
-                    <div class="resume-banner-actions">
-                        <button class="btn-primary" onclick="openResumeModal()">
-                            <i class="fas fa-eye"></i> View Digital Resume
-                        </button>
-                        <button class="btn-secondary" onclick="openResumeModal(); setTimeout(() => window.print(), 300);">
-                            <i class="fas fa-download"></i> Print / Download PDF
+                    <div class="resume-banner-actions" style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                        <a href="technical_profile_faceprep.html" class="btn-primary" style="background: linear-gradient(135deg, #1e3a8a, #ea580c); text-decoration: none;">
+                            <i class="fas fa-file-invoice"></i> FACE Prep Technical Profile
+                        </a>
+                        <a href="technical_profile.html" class="btn-secondary" style="text-decoration: none;">
+                            <i class="fas fa-id-card"></i> Technical Profile (Q6)
+                        </a>
+                        <button class="btn-secondary" onclick="openResumeModal()">
+                            <i class="fas fa-eye"></i> View Full CV
                         </button>
                     </div>
                 </div>
@@ -1153,9 +1216,15 @@
 
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; padding-right: 2.5rem; flex-wrap: wrap; gap: 0.75rem;">
                 <h3 style="font-size: 1.4rem; font-weight: 800; color: #fff;"><i class="fas fa-file-invoice text-accent"></i> Verified Resume</h3>
-                <div class="resume-modal-actions" style="display: flex; gap: 0.75rem;">
-                    <button class="btn-primary" onclick="window.print()" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">
-                        <i class="fas fa-print"></i> Print / Save as PDF
+                <div class="resume-modal-actions" style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+                    <a href="technical_profile_faceprep.html" class="btn-primary" style="padding: 0.5rem 1rem; font-size: 0.85rem; text-decoration: none; background: linear-gradient(135deg, #1e3a8a, #ea580c);">
+                        <i class="fas fa-certificate"></i> FACE Prep Profile
+                    </a>
+                    <a href="technical_profile.html" class="btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.85rem; text-decoration: none;">
+                        <i class="fas fa-id-card"></i> Technical Profile
+                    </a>
+                    <button class="btn-primary" onclick="window.print()" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
+                        <i class="fas fa-print"></i> Print CV
                     </button>
                 </div>
             </div>
@@ -1165,7 +1234,7 @@
                 <div class="resume-header-flex">
                     <div class="resume-header-text">
                         <h1>THUKIVAKAM CHATURYA</h1>
-                        <div class="resume-subtitle">BCA STUDENT | HR & OPERATIONS</div>
+                        <div class="resume-subtitle">BCA (AI & ML) | DATA ANALYTICS & TECH OPERATIONS</div>
 
                         <div class="resume-contact-bar">
                             <span><i class="fas fa-phone"></i> +91 9652330888</span>
@@ -1214,37 +1283,38 @@
                     <li>Worked with master sheets and internal operational processes.</li>
                 </ul>
 
-                <div class="resume-sec-title">Academic Projects & Coursework</div>
+                <div class="resume-sec-title">Featured Projects & Technical Coursework</div>
+                
                 <div class="resume-entry-header">
-                    <span>Power BI Sales Dashboard</span>
-                    <span>Academic Project</span>
+                    <span>EcoTrack — Smart Waste Management System</span>
+                    <span>Python &bull; Streamlit &bull; Plotly</span>
                 </div>
                 <ul class="resume-bullet-list">
-                    <li>Built an interactive Power BI dashboard on the Sample Superstore dataset to analyze sales, profit, and regional performance trends.</li>
+                    <li>Developed an interactive municipal waste analytics platform monitoring zone collections, recyclable diversion rates, and environmental impact metrics (CO₂e saved, energy conserved).</li>
                 </ul>
 
                 <div class="resume-entry-header">
-                    <span>Deep Learning Architecture Comparison</span>
-                    <span>Coursework</span>
+                    <span>SpendWise — Personal Finance Manager</span>
+                    <span>JavaScript &bull; Tailwind CSS &bull; Chart.js</span>
                 </div>
                 <ul class="resume-bullet-list">
-                    <li>Authored a report comparing FNN, CNN, and RNN architectures, including custom diagrams to illustrate structural differences.</li>
+                    <li>Built a responsive personal finance management dashboard with dynamic Chart.js visualizations, category expenditure breakdowns, and monthly budget limits.</li>
                 </ul>
 
                 <div class="resume-entry-header">
-                    <span>Ethical Considerations in AI</span>
-                    <span>Coursework</span>
+                    <span>AI Image Transformation & Analysis App</span>
+                    <span>Python &bull; PyTorch &bull; Streamlit</span>
                 </div>
                 <ul class="resume-bullet-list">
-                    <li>Researched and wrote a report on bias, privacy, and transparency challenges in AI systems.</li>
+                    <li>Engineered a deep learning computer vision tool enabling automated image style transformations, difference heatmaps, and MSE error tracking with GPU/MPS acceleration.</li>
                 </ul>
 
                 <div class="resume-entry-header">
-                    <span>Garbage Management System</span>
-                    <span>Academic Concept (Not Deployed)</span>
+                    <span>Power BI Sales Analytics Dashboard</span>
+                    <span>Power BI &bull; DAX &bull; Excel</span>
                 </div>
                 <ul class="resume-bullet-list">
-                    <li>Worked on a concept project focused on improving waste management through better garbage collection, segregation and monitoring. Developed as an academic/project concept.</li>
+                    <li>Built a multi-view executive Power BI dashboard analyzing sales, profit margins, and regional purchasing behavior with DAX and custom KPI visuals.</li>
                 </ul>
 
                 <div class="resume-sec-title">Education</div>
