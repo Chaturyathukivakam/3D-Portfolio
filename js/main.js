@@ -177,17 +177,43 @@
             type: 'Research & Coursework'
         },
         'garbage-system': {
-            title: 'Garbage Management System',
-            badge: 'Academic Concept • Not Deployed',
-            category: 'Sustainability & Technology Modeling',
-            tools: ['Waste Management', 'Sustainability', 'Process Modeling', 'Technology Integration'],
-            description: 'Worked on a project focused on improving waste management through better garbage collection, segregation and monitoring. The project was developed strictly as an academic/project concept and was not deployed.',
+            title: 'EcoTrack — Smart Garbage Management System',
+            badge: 'Waste Analytics Platform',
+            category: 'Sustainability & Data Intelligence',
+            tools: ['Python', 'Streamlit', 'Pandas', 'Plotly', 'Data Analytics', 'Environmental Modeling'],
+            description: 'A comprehensive web-based waste intelligence and analytics application built with Python, Streamlit, Pandas, and Plotly, designed to monitor municipal waste collection, recycling efficiency, and carbon offset metrics.',
             highlights: [
-                'Designed conceptual architectural blueprints for intelligent waste categorization and segregation.',
-                'Outlined sensor and telemetry workflows for optimal collection vehicle route planning.',
-                'Created sustainability impact assessments and civic monitoring frameworks.'
+                'Built interactive Plotly visualizations: waste distribution donut charts, daily collection timelines, and zone status comparisons.',
+                'Developed dynamic multi-criteria data filtering and custom CSV/Excel waste log management.',
+                'Engineered an Environmental Impact & Carbon Calculator computing CO₂e avoided, trees saved, and landfill volume preserved.'
             ],
-            type: 'Academic Concept'
+            type: 'Full-Stack Web App'
+        },
+        'spendwise': {
+            title: 'SpendWise — Personal Finance Manager',
+            badge: 'Featured Web Application',
+            category: 'Web Development & Financial Analytics',
+            tools: ['JavaScript', 'HTML5', 'Tailwind CSS', 'Chart.js', 'Local Storage API'],
+            description: 'A responsive personal finance and expense tracking dashboard providing real-time financial health analytics, interactive category breakdowns, monthly budgeting, and transaction ledger management.',
+            highlights: [
+                'Engineered interactive Chart.js doughnut charts and spending trend timelines for instant financial insights.',
+                'Implemented category-wise budget caps with visual alert indicators for spend threshold breaches.',
+                'Built responsive transaction filters, income vs. expense cashflow tracking, and persistent browser storage.'
+            ],
+            type: 'Interactive Web Application'
+        },
+        'image-transform': {
+            title: 'AI Image Transformation & Analysis App',
+            badge: 'Computer Vision & Deep Learning',
+            category: 'Artificial Intelligence & Vision',
+            tools: ['Python', 'PyTorch', 'Computer Vision', 'PIL', 'NumPy', 'Streamlit'],
+            description: 'An AI computer vision application built with PyTorch and Streamlit enabling deep learning image transformations, pixel-level difference analysis, and mean squared error (MSE) loss computation.',
+            highlights: [
+                'Implemented automated image style manipulation and tensor-based pixel disparity computation.',
+                'Engineered side-by-side visual difference heatmaps to pinpoint localized structural modifications.',
+                'Optimized model execution with GPU/MPS hardware acceleration for real-time image processing.'
+            ],
+            type: 'Deep Learning Application'
         }
     };
 
